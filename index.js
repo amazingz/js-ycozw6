@@ -1,6 +1,6 @@
-// Import stylesheets
-import './style.css';
+const palindrom = str => {
+  str = str.toLowerCase();
+  return str==str.split('').reverse().join('');
+}
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+console.log(palindrom('abba'));
